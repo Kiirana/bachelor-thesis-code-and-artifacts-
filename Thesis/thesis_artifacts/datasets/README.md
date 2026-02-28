@@ -12,8 +12,8 @@ Der Datensatz wird aus zwei öffentlich verfügbaren Quellen zusammengesetzt:
 
 | Quelle | Beschreibung | Lizenz |
 |--------|-------------|--------|
-| **RSCD** (Road Surface Condition Dataset) | ~1 Mio. 75×75 px Patches, 27 Klassen | [Buda et al., 2018] |
-| **RoadSaW** | Multi-Resolution-Patches (75/150/225 px), 12 Klassen | [He et al., 2009] |
+| **RSCD** (Road Surface Condition Dataset) | ~1 Mio. 75×75 px Patches, 27 Klassen | [Zhao et al., 2022/2023] |
+| **RoadSaW** | Multi-Resolution-Patches (75/150/225 px), 12 Klassen | [Cordes et al., CVPRW 2022] |
 
 Das Skript `prepare_texture_dataset.py` (→ `code/utils/`) führt folgende Schritte durch:
 1. Canonical Mapping: 27 RSCD-Klassen + 12 RoadSaW-Klassen → 4 Zielklassen (`asphalt`, `cobblestone`, `gravel`, `sand`)

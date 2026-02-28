@@ -48,9 +48,22 @@ Patch-based road surface classification dataset assembled from RSCD and RoadSaW.
 Training scripts:
 - `train_yolo12m_evcs_robust.py` — full training with configurable augmentation mode
 
-Checkpoints: `models/yolo_evcs/yolo_robust/` (in artifacts).
+Checkpoints: `models/yolo_evcs/yolo_baseline/` and `models/yolo_evcs/yolo_robust/` (in artifacts).
 
+#### Texture Classification (MobileNetV3)
 
+| Variant | Script | Checkpoint Dir | Test Macro-F1 |
+|---------|--------|---------------|---------------|
+| 01_baseline (Small) | `train_texture_mnv3.py` | `models/texture_mnv3/01_baseline/` | 0.9656 |
+| 02_class_weighted (Small) | `train_texture_mnv3_weighted.py` | `models/texture_mnv3/02_class_weighted/` | 0.9635 |
+| 03_robust (Small) | `train_texture_mnv3_robust.py` | `models/texture_mnv3/03_robust_augmentation/` | 0.9595 |
+| 04_large_baseline (Large) | `train_texture_mnv3_large.py` | `models/texture_mnv3/04_large_baseline/` | 0.9700 |
+
+### 3. Core ML Export
+
+Trained models are exported to Core ML for iOS deployment:
+- `export_baseline_models.py` — exports MobileNetV3-Small + YOLO12m baseline
+- `export_large_baseline.py` — exports MobileNetV3-Large baseline
 
 ### 4. iOS App
 
@@ -100,7 +113,8 @@ thesisModels/
 ├── train_texture_mnv3_weighted.py   # MobileNetV3-Small with class-weighted loss
 ├── train_texture_mnv3_robust.py     # MobileNetV3-Small with geometric augmentation
 ├── train_texture_mnv3_large.py      # MobileNetV3-Large baseline
-├── train_yolo12m_evcs_robust.py     # YOLO12m EVCS (baseline + robust via --mode)
+├── train_yolo12m_evcs_single.py     # YOLO12m EVCS baseline
+├── train_yolo12m_evcs_robust.py     # YOLO12m EVCS with robust augmentation
 │
 ├── ── Data Preparation ─────────────────────────────────────
 ├── prepare_evcs_dataset.py          # Site-based EVCS split (no site leakage)
@@ -108,8 +122,8 @@ thesisModels/
 ├── validate_evcs_dataset.py         # EVCS dataset integrity checks
 │
 ├── ── Evaluation Scripts ───────────────────────────────────
-├── evaluate_robustness.py           # Texture robustness (29 conditions)
-├── evaluate_yolo_robustness.py      # YOLO robustness (23 conditions)
+├── evaluate_robustness.py           # Texture robustness (22+1 conditions incl. clean)
+├── evaluate_yolo_robustness.py      # YOLO robustness (22+1 conditions incl. clean)
 ├── gen_confusion_matrix.py          # Confusion matrix generation
 ├── gen_pr_curve.py                  # PR curve generation
 ├── create_pr_curve.py               # PR curve from results.csv
@@ -153,6 +167,14 @@ thesisModels/
 │   ├── BatchEvaluationView.swift    # Batch evaluation UI
 │   ├── BatchEvaluationViewModel.swift  # Batch evaluation logic, JSON/CSV export
 │   └── LatencyTracker.swift         # CACurrentMediaTime() stage stopwatch
+│
+├── ── Thesis Source ────────────────────────────────────────
+├── alteThesisFixBedarf.tex          # Main thesis LaTeX file
+├── bibtex.bib                       # Bibliography
+├── preamble.tex                     # LaTeX preamble
+├── content/
+│   └── attachments/                 # Figures: PR curves, confusion matrices,
+│                                      simulator screenshots, architecture diagrams
 │
 ├── ── Other ────────────────────────────────────────────────
 ├── 100BatchrealTest.json            # GT manifest (100 images, 43/48/6/3)
@@ -203,29 +225,23 @@ Best checkpoint saved by **val macro-F1**.
 
 ### EVCS — YOLO12m Detection
 
-Both variants use the same script with `--mode` to switch between standard and geometric augmentation:
-
 ```bash
-# Baseline (standard YOLO augmentation: mosaic, flips, minimal HSV)
-python train_yolo12m_evcs_robust.py \
+# Baseline
+python train_yolo12m_evcs_single.py \
   --data evcs_yolo_site_based/data.yaml \
-  --mode baseline \
+  --model yolo12m.pt \
   --epochs 100 \
-  --batch 16 \
+  --batch 24 \
   --patience 20 \
   --seed 42 \
   --device mps \
   --name yolo12m_evcs_baseline
 
-# Robust augmentation (adds rotation ±180°, perspective 0.001, shear ±20°)
+# Robust augmentation
 python train_yolo12m_evcs_robust.py \
   --data evcs_yolo_site_based/data.yaml \
   --mode robust \
   --epochs 100 \
-  --batch 16 \
-  --patience 20 \
-  --seed 42 \
-  --device mps \
   --name yolo12m_evcs_robust
 ```
 
@@ -239,18 +255,35 @@ yolo export model=FolderYoloTrainedModel/yolo_baseline/weights/best.pt format=co
 ## Robustness Evaluation
 
 ```bash
-# Texture — 29 conditions (incl. clean), stratified subset (100 per class, n=400)
+# Texture — 22 perturbation conditions + clean reference, stratified subset (100 per class, n=400)
 python evaluate_robustness.py \
   --checkpoint ThesisRUNSFinal/01_baseline/best.pt \
   --data-root texture_data_final \
   --out ThesisRUNSFinal/01_baseline/robustness_val.json
 
-# YOLO — 23 conditions, full val split (495 images)
+# YOLO — 22 perturbation conditions + clean reference, full val split (495 images)
 python evaluate_yolo_robustness.py \
   --model FolderYoloTrainedModel/yolo_baseline/weights/best.pt \
   --data evcs_yolo_site_based/data.yaml \
   --out FolderYoloTrainedModel/yolo_baseline/robustness_val.json
 ```
+
+---
+
+## Thesis File — `alteThesisFixBedarf.tex`
+
+All metric values in the thesis are sourced directly from the training artifact JSON files on disk. No values are fabricated.
+
+| Thesis Section | Content | Primary Artifact Source |
+|----------------|---------|------------------------|
+| 6.1 Experimentelles Setup | Dataset sizes, IR, hardware | filesystem counts, `meta.json` |
+| 6.2 E-Ladestation-Detektion: YOLO12m | mAP50, mAP50-95, P, R | `yolo_baseline/results.csv`, `test_results.json` |
+| 6.3 Bodentextur-Klassifikation: MNV3-Small | F1, P, R, confusion matrix | `01_baseline/train_log.json` |
+| 6.4 Validitätseinschränkungen | Discussion of test limits | — (prose) |
+| 6.5 Ablationsstudien | Large-model + class-weighting | `04_large_baseline/`, `02_class_weighted/train_log.json` |
+| 6.6 Robustheitsanalyse | 22+1 condition tables (×2 models each) | all `robustness_val.json` files |
+| 6.7 On-Device-Test | End-to-end latency, accuracy | `100BatchrealTest.json`, iOS console output |
+| 6.8 Fehleranalyse und Limitation | Qualitative + references robustness | derived from 6.2–6.6 |
 
 ---
 
@@ -286,8 +319,8 @@ Device support: **MPS** (Apple Silicon), CUDA, CPU.
 | YOLO input size | 640 × 640 px |
 | MobileNetV3 input size | 224 × 224 px |
 
-† Artifact value (`train_log.json`). The thesis text states 0.9612; the discrepancy
-is noted — the artifact is regarded as the authoritative source.
+† Artifact value (`train_log.json`). The thesis text has been corrected to 0.9595
+(matching the artifact). See also: MNV3-Robust Δ = −0.61 pp vs. baseline.
 
 ---
 
