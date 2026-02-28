@@ -1,0 +1,17 @@
+# Thesis frozen requirements — auto-generated
+# Python 3.12.6
+# Platform: macOS-15.6.1-arm64-arm-64bit
+# Device: Apple M4 Pro (MPS)
+
+torch==2.8.0
+torchvision==0.23.0
+ultralytics==8.3.214
+albumentations==2.0.8
+opencv-python==4.12.0
+numpy==2.3.4
+pyyaml==6.0.2
+tqdm==4.67.1
+Pillow==12.0.0
+matplotlib==3.10.6
+pandas==2.3.2
+scipy==1.16.1

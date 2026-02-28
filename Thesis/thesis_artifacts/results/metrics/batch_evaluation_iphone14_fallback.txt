@@ -1,0 +1,127 @@
+iPhone 14 (A15 Bionic) — Fallback-ROI (without Car-Detection ROI)
+Date: 2026-02-27
+Pipeline: MobileNetV3-Large (Texture) → YOLO12m (EV Detection)
+GT Manifest: 100BatchrealTest.json (100 entries)
+Source: Real print() output from BatchEvaluationViewModel.swift running on
+        a physical iPhone 14 (A15 Bionic), captured via Xcode console log.
+        Latency measured with CACurrentMediaTime(). Per-image predictions and
+        stage timings are unmodified device output.
+
+======================================================================
+BATCH EVALUATION COMPLETE — 100 images
+======================================================================
+Stage Mean(ms) Std(ms) Min(ms) Max(ms)
+----------------------------------------------------------------------
+mobilenet_classification     4.22     1.65     3.41    19.58
+yolo_ev_detection    37.71     1.52    36.54    50.58
+total_e2e    41.93     3.06    39.95    70.16
+----------------------------------------------------------------------
+# File Truth Predicted OK?
+----------------------------------------------------------------------
+1      IMG_4531.HEIC asphalt asphalt ✓
+2      IMG_4532.HEIC asphalt asphalt ✓
+3      IMG_4534.HEIC asphalt asphalt ✓
+4      IMG_4535.HEIC asphalt asphalt ✓
+5      IMG_4536.HEIC asphalt asphalt ✓
+6      IMG_4537.HEIC asphalt asphalt ✓
+7      IMG_4538.HEIC asphalt asphalt ✓
+8      IMG_4539.HEIC asphalt asphalt ✓
+9      IMG_4540.HEIC asphalt asphalt ✓
+10     IMG_4541.HEIC asphalt asphalt ✓
+11     IMG_4542.HEIC asphalt asphalt ✓
+12     IMG_4543.HEIC asphalt asphalt ✓
+13     IMG_4544.HEIC asphalt asphalt ✓
+14     IMG_4545.HEIC asphalt asphalt ✓
+15     IMG_4546.HEIC asphalt asphalt ✓
+16     IMG_4547.HEIC asphalt asphalt ✓
+17     IMG_4548.HEIC asphalt asphalt ✓
+18     IMG_4549.HEIC asphalt asphalt ✓
+19     IMG_4550.HEIC asphalt asphalt ✓
+20     IMG_4551.HEIC cobblestone asphalt ✗
+21     IMG_4552.HEIC cobblestone asphalt ✗
+22     IMG_4555.HEIC cobblestone asphalt ✗
+23     IMG_4556.HEIC cobblestone asphalt ✗
+24     IMG_4557.HEIC cobblestone asphalt ✗
+25     IMG_4558.HEIC cobblestone asphalt ✗
+26     IMG_4559.HEIC asphalt asphalt ✓
+27     IMG_4560.HEIC asphalt asphalt ✓
+28     IMG_4561.HEIC asphalt asphalt ✓
+29     IMG_4562.HEIC asphalt asphalt ✓
+30     IMG_4563.HEIC asphalt asphalt ✓
+31     IMG_4564.HEIC gravel asphalt ✗
+32     IMG_4565.HEIC asphalt asphalt ✓
+33     IMG_4566.HEIC cobblestone asphalt ✗
+34     IMG_4567.HEIC cobblestone asphalt ✗
+35     IMG_4568.HEIC asphalt asphalt ✓
+36     IMG_4569.HEIC asphalt asphalt ✓
+37     IMG_4570.HEIC asphalt asphalt ✓
+38     IMG_4571.HEIC asphalt asphalt ✓
+39     IMG_4572.HEIC asphalt asphalt ✓
+40     IMG_4573.HEIC asphalt asphalt ✓
+41     IMG_4574.HEIC asphalt asphalt ✓
+42     IMG_4575.HEIC asphalt asphalt ✓
+43     IMG_4576.HEIC asphalt asphalt ✓
+44     IMG_4578.HEIC gravel asphalt ✗
+45     IMG_4579.HEIC gravel asphalt ✗
+46     IMG_4580.HEIC gravel asphalt ✗
+47     IMG_4581.HEIC cobblestone asphalt ✗
+48     IMG_4582.HEIC cobblestone asphalt ✗
+49     IMG_4583.HEIC cobblestone asphalt ✗
+50     IMG_4584.HEIC cobblestone asphalt ✗
+51     IMG_4585.HEIC cobblestone asphalt ✗
+52     IMG_4586.HEIC cobblestone asphalt ✗
+53     IMG_4587.HEIC cobblestone asphalt ✗
+54     IMG_4588.HEIC asphalt asphalt ✓
+55     IMG_4589.HEIC asphalt asphalt ✓
+56     IMG_4590.HEIC cobblestone asphalt ✗
+57     IMG_4591.HEIC cobblestone asphalt ✗
+58     IMG_4592.HEIC cobblestone asphalt ✗
+59     IMG_4593.HEIC cobblestone asphalt ✗
+60     IMG_4594.HEIC cobblestone asphalt ✗
+61     IMG_4595.HEIC asphalt asphalt ✓
+62     IMG_4596.HEIC asphalt asphalt ✓
+63     IMG_4597.HEIC asphalt asphalt ✓
+64     IMG_4598.HEIC asphalt asphalt ✓
+65     IMG_4599.HEIC cobblestone asphalt ✗
+66     IMG_4600.HEIC cobblestone asphalt ✗
+67     IMG_4601.HEIC cobblestone asphalt ✗
+68     IMG_4602.HEIC cobblestone asphalt ✗
+69     IMG_4603.HEIC cobblestone asphalt ✗
+70     IMG_4604.HEIC cobblestone asphalt ✗
+71     IMG_4605.HEIC cobblestone asphalt ✗
+72     IMG_4606.HEIC asphalt asphalt ✓
+73     IMG_4607.HEIC asphalt asphalt ✓
+74     IMG_4608.HEIC asphalt asphalt ✓
+75     IMG_4609.HEIC gravel asphalt ✗
+76     IMG_4610.HEIC gravel asphalt ✗
+77     IMG_4611.HEIC sand asphalt ✗
+78     IMG_4612.HEIC sand asphalt ✗
+79     IMG_4613.HEIC cobblestone asphalt ✗
+80     IMG_4614.HEIC cobblestone asphalt ✗
+81     IMG_4615.HEIC cobblestone asphalt ✗
+82     IMG_4616.HEIC cobblestone asphalt ✗
+83     IMG_4617.HEIC cobblestone asphalt ✗
+84     IMG_4618.HEIC cobblestone asphalt ✗
+85     IMG_4619.HEIC cobblestone asphalt ✗
+86     IMG_4620.HEIC cobblestone asphalt ✗
+87     IMG_4621.HEIC cobblestone asphalt ✗
+88     IMG_4622.HEIC cobblestone asphalt ✗
+89     IMG_4623.HEIC cobblestone asphalt ✗
+90     IMG_4624.HEIC cobblestone asphalt ✗
+91     IMG_4625.HEIC cobblestone asphalt ✗
+92     IMG_4626.HEIC cobblestone asphalt ✗
+93     IMG_4627.HEIC cobblestone asphalt ✗
+94     IMG_4628.HEIC cobblestone asphalt ✗
+95     IMG_4629.HEIC cobblestone asphalt ✗
+96     IMG_4630.HEIC cobblestone asphalt ✗
+97     IMG_4631.HEIC cobblestone asphalt ✗
+98     IMG_4632.HEIC cobblestone asphalt ✗
+99     IMG_4633.HEIC cobblestone asphalt ✗
+100    IMG_4669.HEIC sand asphalt ✗
+----------------------------------------------------------------------
+Texture accuracy: 43 / 100  (43.0%)
+  asphalt 43/43  (100%)
+  cobblestone 0/48  (0%)
+  gravel 0/6  (0%)
+  sand 0/3  (0%)
+======================================================================

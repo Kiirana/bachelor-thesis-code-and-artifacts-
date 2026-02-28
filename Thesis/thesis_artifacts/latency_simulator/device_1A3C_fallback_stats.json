@@ -1,0 +1,26 @@
+[
+  {
+    "count" : 100,
+    "maxMs" : 61.49283333434141,
+    "meanMs" : 16.100994999942486,
+    "minMs" : 10.968958333251067,
+    "stageName" : "mobilenet_classification",
+    "stdMs" : 4.704105233390234
+  },
+  {
+    "count" : 100,
+    "maxMs" : 271.5148749994114,
+    "meanMs" : 210.14976041678892,
+    "minMs" : 200.467499998922,
+    "stageName" : "yolo_ev_detection",
+    "stdMs" : 7.005564344793392
+  },
+  {
+    "count" : 100,
+    "maxMs" : 333.0077083337528,
+    "meanMs" : 226.2507554167314,
+    "minMs" : 213.97987499949522,
+    "stageName" : "total_e2e",
+    "stdMs" : 11.399317150816303
+  }
+]

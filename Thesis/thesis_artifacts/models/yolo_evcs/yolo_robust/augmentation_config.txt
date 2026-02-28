@@ -1,0 +1,14 @@
+Training Mode: robust
+Seed: 42
+
+Augmentation Parameters:
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  mosaic: 1.0
+  mixup: 0.0
+  fliplr: 0.5
+  degrees: 180.0
+  perspective: 0.001
+  shear: 20.0
+  flipud: 0.5

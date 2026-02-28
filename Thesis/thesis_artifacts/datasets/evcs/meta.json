@@ -1,0 +1,26 @@
+{
+  "dataset": "EVCSDataset_VISCODA_V1.1 (PartA + PartB)",
+  "source": "https://data.2maz.net/viscoda/evcs/",
+  "classes": ["EVCS"],
+  "nc": 1,
+  "split_strategy": "site-based (no site appears in more than one split)",
+  "counts_images": {
+    "train": 3512,
+    "val": 495,
+    "test": 397,
+    "total": 4404
+  },
+  "counts_boxes": {
+    "train": 5875,
+    "val": 1050,
+    "test": 813,
+    "total": 7738
+  },
+  "counts_sites": {
+    "train": 47,
+    "val": 6,
+    "test": 6,
+    "total": 59
+  },
+  "note": "Counts verified by filesystem enumeration of evcs_yolo_site_based/ on 2026-02-10."
+}

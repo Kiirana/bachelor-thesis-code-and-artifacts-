@@ -1,0 +1,42 @@
+[
+  {
+    "count" : 100,
+    "maxMs" : 83.10174999999731,
+    "meanMs" : 78.63267374999823,
+    "minMs" : 73.0938333333313,
+    "stageName" : "yolo_car_detection",
+    "stdMs" : 1.8449222522536854
+  },
+  {
+    "count" : 100,
+    "maxMs" : 0.016875000000027285,
+    "meanMs" : 0.011637083334221643,
+    "minMs" : 0.009708333351454712,
+    "stageName" : "roi_extraction",
+    "stdMs" : 0.0010090655123150417
+  },
+  {
+    "count" : 100,
+    "maxMs" : 22.16895833333865,
+    "meanMs" : 14.936211249998337,
+    "minMs" : 9.089499999987538,
+    "stageName" : "mobilenet_classification",
+    "stdMs" : 3.565009094577952
+  },
+  {
+    "count" : 100,
+    "maxMs" : 205.4389583333318,
+    "meanMs" : 196.98117749999824,
+    "minMs" : 190.83274999999844,
+    "stageName" : "yolo_ev_detection",
+    "stdMs" : 2.6326386576985756
+  },
+  {
+    "count" : 100,
+    "maxMs" : 301.2219583333149,
+    "meanMs" : 290.5616995833291,
+    "minMs" : 280.71374999998966,
+    "stageName" : "total_e2e",
+    "stdMs" : 3.5078901947959626
+  }
+]

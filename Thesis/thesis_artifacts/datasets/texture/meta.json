@@ -1,0 +1,40 @@
+{
+  "classes": [
+    "asphalt",
+    "cobblestone",
+    "gravel",
+    "sand"
+  ],
+  "seed": 42,
+  "split": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "counts_total": {
+    "sand": 106187,
+    "gravel": 106354,
+    "asphalt": 307225,
+    "cobblestone": 5232
+  },
+  "counts_split": {
+    "train": {
+      "asphalt": 245780,
+      "gravel": 85083,
+      "sand": 84949,
+      "cobblestone": 4185
+    },
+    "val": {
+      "gravel": 10635,
+      "asphalt": 30722,
+      "cobblestone": 523,
+      "sand": 10618
+    },
+    "test": {
+      "sand": 10620,
+      "asphalt": 30723,
+      "gravel": 10636,
+      "cobblestone": 524
+    }
+  }
+}

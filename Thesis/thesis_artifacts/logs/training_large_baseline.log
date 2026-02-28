@@ -1,0 +1,31 @@
+Training MobileNetV3-Large → ThesisRUNSFinal/04_large_baseline
+Device: mps  |  Classes: ['asphalt', 'cobblestone', 'gravel', 'sand']
+Epochs: 10  |  Batch: 32  |  LR: 0.001
+------------------------------------------------------------
+Epoch 001/10 | loss=0.1837 | val_f1=0.9085 | val_prec=0.9357 | val_rec=0.8877
+  ↑ New best checkpoint saved (val F1=0.9085)
+Epoch 002/10 | loss=0.1359 | val_f1=0.9449 | val_prec=0.9501 | val_rec=0.9399
+  ↑ New best checkpoint saved (val F1=0.9449)
+Epoch 003/10 | loss=0.1155 | val_f1=0.9425 | val_prec=0.9511 | val_rec=0.9381
+Epoch 004/10 | loss=0.1000 | val_f1=0.9606 | val_prec=0.9629 | val_rec=0.9584
+  ↑ New best checkpoint saved (val F1=0.9606)
+Epoch 005/10 | loss=0.0885 | val_f1=0.9620 | val_prec=0.9643 | val_rec=0.9603
+  ↑ New best checkpoint saved (val F1=0.9620)
+Epoch 006/10 | loss=0.0760 | val_f1=0.9647 | val_prec=0.9666 | val_rec=0.9630
+  ↑ New best checkpoint saved (val F1=0.9647)
+Epoch 007/10 | loss=0.0638 | val_f1=0.9668 | val_prec=0.9665 | val_rec=0.9672
+  ↑ New best checkpoint saved (val F1=0.9668)
+Epoch 008/10 | loss=0.0514 | val_f1=0.9704 | val_prec=0.9714 | val_rec=0.9695
+  ↑ New best checkpoint saved (val F1=0.9704)
+Epoch 009/10 | loss=0.0400 | val_f1=0.9700 | val_prec=0.9709 | val_rec=0.9691
+Epoch 010/10 | loss=0.0313 | val_f1=0.9710 | val_prec=0.9716 | val_rec=0.9705
+  ↑ New best checkpoint saved (val F1=0.9710)
+
+============================================================
+Done ✅
+Best checkpoint : ThesisRUNSFinal/04_large_baseline/best.pt
+Best val F1     : 0.9710
+Test F1 (macro) : 0.9700
+Test precision  : 0.9707
+Test recall     : 0.9694
+============================================================

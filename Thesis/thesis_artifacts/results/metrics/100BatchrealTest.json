@@ -1,0 +1,402 @@
+[
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4531.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4532.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4669.HEIC",
+    "groundTruth": "sand"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4534.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4535.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4536.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4537.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4538.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4539.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4540.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4541.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4542.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4543.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4544.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4545.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4546.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4547.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4548.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4549.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4550.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4551.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4552.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4555.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4556.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4557.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4558.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4559.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4560.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4561.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4562.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4563.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4564.HEIC",
+    "groundTruth": "gravel"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4565.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4566.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4567.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4568.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4569.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4570.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4571.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4572.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4573.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4574.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4575.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4576.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4578.HEIC",
+    "groundTruth": "gravel"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4579.HEIC",
+    "groundTruth": "gravel"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4580.HEIC",
+    "groundTruth": "gravel"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4581.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4582.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4583.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4584.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4585.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4586.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4587.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4588.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4589.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4590.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4591.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4592.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4593.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4594.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4595.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4596.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4597.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4598.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4599.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4600.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4601.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4602.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4603.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4604.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4605.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4606.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4607.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4608.HEIC",
+    "groundTruth": "asphalt"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4609.HEIC",
+    "groundTruth": "gravel"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4610.HEIC",
+    "groundTruth": "gravel"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4611.HEIC",
+    "groundTruth": "sand"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4612.HEIC",
+    "groundTruth": "sand"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4613.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4614.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4615.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4616.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4617.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4618.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4619.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4620.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4621.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4622.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4623.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4624.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4625.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4626.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4627.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4628.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4629.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4630.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4631.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4632.HEIC",
+    "groundTruth": "cobblestone"
+  },
+  {
+    "filename": "/Users/nikitamasch/Downloads/EvalDataset/IMG_4633.HEIC",
+    "groundTruth": "cobblestone"
+  }
+]
