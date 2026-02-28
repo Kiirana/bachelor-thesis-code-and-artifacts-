@@ -100,8 +100,7 @@ thesisModels/
 ├── train_texture_mnv3_weighted.py   # MobileNetV3-Small with class-weighted loss
 ├── train_texture_mnv3_robust.py     # MobileNetV3-Small with geometric augmentation
 ├── train_texture_mnv3_large.py      # MobileNetV3-Large baseline
-├── train_yolo12m_evcs_single.py     # YOLO12m EVCS baseline
-├── train_yolo12m_evcs_robust.py     # YOLO12m EVCS with robust augmentation
+├── train_yolo12m_evcs_robust.py     # YOLO12m EVCS (baseline + robust via --mode)
 │
 ├── ── Data Preparation ─────────────────────────────────────
 ├── prepare_evcs_dataset.py          # Site-based EVCS split (no site leakage)
@@ -212,23 +211,29 @@ Best checkpoint saved by **val macro-F1**.
 
 ### EVCS — YOLO12m Detection
 
+Both variants use the same script with `--mode` to switch between standard and geometric augmentation:
+
 ```bash
-# Baseline
-python train_yolo12m_evcs_single.py \
+# Baseline (standard YOLO augmentation: mosaic, flips, minimal HSV)
+python train_yolo12m_evcs_robust.py \
   --data evcs_yolo_site_based/data.yaml \
-  --model yolo12m.pt \
+  --mode baseline \
   --epochs 100 \
-  --batch 24 \
+  --batch 16 \
   --patience 20 \
   --seed 42 \
   --device mps \
   --name yolo12m_evcs_baseline
 
-# Robust augmentation
+# Robust augmentation (adds rotation ±180°, perspective 0.001, shear ±20°)
 python train_yolo12m_evcs_robust.py \
   --data evcs_yolo_site_based/data.yaml \
   --mode robust \
   --epochs 100 \
+  --batch 16 \
+  --patience 20 \
+  --seed 42 \
+  --device mps \
   --name yolo12m_evcs_robust
 ```
 
