@@ -154,14 +154,6 @@ thesisModels/
 │   ├── BatchEvaluationViewModel.swift  # Batch evaluation logic, JSON/CSV export
 │   └── LatencyTracker.swift         # CACurrentMediaTime() stage stopwatch
 │
-├── ── Thesis Source ────────────────────────────────────────
-├── alteThesisFixBedarf.tex          # Main thesis LaTeX file
-├── bibtex.bib                       # Bibliography
-├── preamble.tex                     # LaTeX preamble
-├── content/
-│   └── attachments/                 # Figures: PR curves, confusion matrices,
-│                                      simulator screenshots, architecture diagrams
-│
 ├── ── Other ────────────────────────────────────────────────
 ├── 100BatchrealTest.json            # GT manifest (100 images, 43/48/6/3)
 ├── pr_curve_data.json               # PR curve data points (1000 R/P pairs)
@@ -259,23 +251,6 @@ python evaluate_yolo_robustness.py \
   --data evcs_yolo_site_based/data.yaml \
   --out FolderYoloTrainedModel/yolo_baseline/robustness_val.json
 ```
-
----
-
-## Thesis File — `alteThesisFixBedarf.tex`
-
-All metric values in the thesis are sourced directly from the training artifact JSON files on disk. No values are fabricated.
-
-| Thesis Section | Content | Primary Artifact Source |
-|----------------|---------|------------------------|
-| 6.1 Experimentelles Setup | Dataset sizes, IR, hardware | filesystem counts, `meta.json` |
-| 6.2 E-Ladestation-Detektion: YOLO12m | mAP50, mAP50-95, P, R | `yolo_baseline/results.csv`, `test_results.json` |
-| 6.3 Bodentextur-Klassifikation: MNV3-Small | F1, P, R, confusion matrix | `01_baseline/train_log.json` |
-| 6.4 Validitätseinschränkungen | Discussion of test limits | — (prose) |
-| 6.5 Ablationsstudien | Large-model + class-weighting | `04_large_baseline/`, `02_class_weighted/train_log.json` |
-| 6.6 Robustheitsanalyse | 29+23 condition tables, 2 models each | all `robustness_val.json` files |
-| 6.7 On-Device-Test | End-to-end latency, accuracy | `100BatchrealTest.json`, iOS console output |
-| 6.8 Fehleranalyse und Limitation | Qualitative + references robustness | derived from 6.2–6.6 |
 
 ---
 
