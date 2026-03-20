@@ -113,7 +113,6 @@ thesisModels/
 ├── gen_confusion_matrix.py          # Confusion matrix generation
 ├── gen_pr_curve.py                  # PR curve generation
 ├── create_pr_curve.py               # PR curve from results.csv
-├── sanity_check.py                  # Cross-reference sanity checks
 ├── export_baseline_models.py        # CoreML export (MobileNetV3)
 ├── export_large_baseline.py         # CoreML export (MobileNetV3-Large)
 │
