@@ -117,13 +117,6 @@ thesisModels/
 ├── export_baseline_models.py        # CoreML export (MobileNetV3)
 ├── export_large_baseline.py         # CoreML export (MobileNetV3-Large)
 │
-├── ── Shell Launchers ──────────────────────────────────────
-├── START_TRAINING.sh                # Launch all texture model training
-├── START_YOLO_TRAINING.sh           # Launch YOLO training
-├── train_all_models.sh              # Train all texture variants sequentially
-├── train_all_yolo_models.sh         # Train all YOLO variants
-├── evaluate_all_models.sh           # Run all texture evaluations
-├── evaluate_all_yolo_models.sh      # Run all YOLO evaluations
 │
 ├── ── Trained Models: Texture (MobileNetV3) ────────────────
 ├── ThesisRUNSFinal/
